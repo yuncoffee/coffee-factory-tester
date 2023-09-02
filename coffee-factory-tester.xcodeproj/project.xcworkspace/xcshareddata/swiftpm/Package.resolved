@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "coffee-factory-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yuncoffee/coffee-factory-swift.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ada1e412fe85bb1f493d6572e8ed57553a097b38"
+      }
+    }
+  ],
+  "version" : 2
+}

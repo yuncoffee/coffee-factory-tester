@@ -8,32 +8,6 @@
 import Foundation
 import SwiftUI
 
-//protocol HasCornerRadius {
-//    static var xxsmall: FoundationSpaceRaduis { get }
-//}
-//
-//extension CGFloat: HasCornerRadius {
-//    static var xxsmall: FoundationSpaceRaduis {
-//        FoundationSpaceRaduis.xxsmall
-//    }
-//}
-//
-//struct CFCornerRadiusModifier: ViewModifier {
-//    var radius: FoundationSpaceRaduis = .xsmall
-//    var antialiased: Bool
-//
-//    func body(content: Content) -> some View {
-//        content
-//            .cornerRadius(radius.rawValue, antialiased: antialiased)
-//    }
-//}
-//
-//extension View {
-//    func cfCornerRadius(_ radius: FoundationSpaceRaduis, antialiased: Bool = true) -> some View {
-//        modifier(CFCornerRadiusModifier(radius: radius, antialiased: antialiased))
-//    }
-//}
-
 extension CGFloat {
     static func cornerRadius(_ size: FoundationSpaceRaduis) -> CGFloat {
         size.rawValue

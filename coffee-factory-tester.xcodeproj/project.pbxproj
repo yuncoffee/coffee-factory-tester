@@ -13,6 +13,9 @@
 		A9BBDB3A2AA0BC0F00FCD396 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BBDB392AA0BC0F00FCD396 /* Preview Assets.xcassets */; };
 		A9BBDB422AA0D62D00FCD396 /* coffee-factory-swift in Frameworks */ = {isa = PBXBuildFile; productRef = A9BBDB412AA0D62D00FCD396 /* coffee-factory-swift */; };
 		A9BBDB482AA2F16900FCD396 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB472AA2F16900FCD396 /* Space.swift */; };
+		A9BBDB4D2AA3105300FCD396 /* SystemFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB4C2AA3105300FCD396 /* SystemFont.swift */; };
+		A9BBDB562AA3268600FCD396 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9BBDB552AA3268600FCD396 /* Pretendard-Bold.otf */; };
+		A9BBDB582AA3268D00FCD396 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9BBDB572AA3268D00FCD396 /* Pretendard-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		A9BBDB372AA0BC0F00FCD396 /* coffee_factory_tester.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = coffee_factory_tester.entitlements; sourceTree = "<group>"; };
 		A9BBDB392AA0BC0F00FCD396 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A9BBDB472AA2F16900FCD396 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		A9BBDB4C2AA3105300FCD396 /* SystemFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFont.swift; sourceTree = "<group>"; };
+		A9BBDB552AA3268600FCD396 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		A9BBDB572AA3268D00FCD396 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +92,9 @@
 		A9BBDB452AA2F12500FCD396 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				A9BBDB472AA2F16900FCD396 /* Space.swift */,
+				A9BBDB4B2AA3102300FCD396 /* Typography */,
+				A9BBDB4A2AA3101100FCD396 /* Color */,
+				A9BBDB492AA3100700FCD396 /* Layout */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -96,6 +104,39 @@
 			children = (
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		A9BBDB492AA3100700FCD396 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBDB472AA2F16900FCD396 /* Space.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		A9BBDB4A2AA3101100FCD396 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		A9BBDB4B2AA3102300FCD396 /* Typography */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBDB542AA3266300FCD396 /* Resource */,
+				A9BBDB4C2AA3105300FCD396 /* SystemFont.swift */,
+			);
+			path = Typography;
+			sourceTree = "<group>";
+		};
+		A9BBDB542AA3266300FCD396 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBDB552AA3268600FCD396 /* Pretendard-Bold.otf */,
+				A9BBDB572AA3268D00FCD396 /* Pretendard-Regular.otf */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +204,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9BBDB3A2AA0BC0F00FCD396 /* Preview Assets.xcassets in Resources */,
+				A9BBDB582AA3268D00FCD396 /* Pretendard-Regular.otf in Resources */,
+				A9BBDB562AA3268600FCD396 /* Pretendard-Bold.otf in Resources */,
 				A9BBDB362AA0BC0F00FCD396 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +220,7 @@
 				A9BBDB342AA0BC0D00FCD396 /* ContentView.swift in Sources */,
 				A9BBDB322AA0BC0D00FCD396 /* coffee_factory_testerApp.swift in Sources */,
 				A9BBDB482AA2F16900FCD396 /* Space.swift in Sources */,
+				A9BBDB4D2AA3105300FCD396 /* SystemFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

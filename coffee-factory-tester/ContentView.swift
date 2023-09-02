@@ -8,6 +8,7 @@
 import SwiftUI
 import CoffeeFactorySwift
 
+
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -16,31 +17,20 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
 //                .padding(CoffeeFactorySwift.init().myFloat)
                 .border(.red, width: 2)
-            Text("Hello, world!")
-                .padding(.spacing800)
+            Text("Anatomy Of, \nAnatomy Of")
+                .systemFont(.largeTtile)
+                .padding(.spacing(.medium))
                 .border(.red, width: 2)
                 .background(Color.blue)
                 .cornerRadius(.cornerRadius(.xlarge))
                 .clipped()
+                
+            Text("Anatomy Of, \nAnatomy Of")
+                .systemFont(.largeTtile)
         }
         .padding()
     }
 }
-
-extension CGFloat {
-    public static var spacing100: CGFloat = 60.0
-}
-
-//extension CGFloat: SpacingSize {
-//    public static var spacing400: CGFloat {
-//        20.0
-//    }
-//
-////    static var spacing200: CGFloat {
-////        60.0
-////    }
-//
-//}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -21,12 +21,12 @@ struct ContentView: View {
                 .systemFont(.largeTtile)
 //                .padding(.spacing(.medium))
                 .border(.red, width: 2)
-                .background(Color.myColor)
+                .background(Color.systemGray100)
                 .cornerRadius(.CFCornerRadius.round)
                 .clipped()
                 
             Text("Anatomy Of, \nAnatomy Of")
-                .foregroundColor(.myColor)
+                .foregroundColor(.primary)
                 .systemFont(.largeTtile)
         }
         .padding()

@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct Card<B: View, Labels: View>: View {
+struct Card<B: View, L: View>: View where B: Composble, L: Composble {
     var title: String = "Card Title"
     var subTitle: String? = nil
     var width: CGFloat
     
     let button: () -> B?
-    let additionalInfo: () -> Labels?
+    let additionalInfo: () -> L?
     
     var body: some View {
         VStack(spacing: 0) {
@@ -22,16 +22,22 @@ struct Card<B: View, Labels: View>: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(
-                        width: width,
-                        height: width / 16 * 9,
+                        maxWidth: width,
+                        maxHeight: width / 16 * 9,
                         alignment: .bottom
                     )
+                    .contentShape(Rectangle())
                     .clipped()
                 additionalInfo()
                     .offset(x: -.CFSpacing.small, y:.CFSpacing.small)
                 CFLabel(label: "ff")
                     .offset(x: -.CFSpacing.small, y:.CFSpacing.small)
             }
+            .frame(
+                maxWidth: width,
+                maxHeight: width / 16 * 9,
+                alignment: .bottom
+            )
             VStack {
                 HStack(spacing: .CFSpacing.xsmall) {
                     textContainer()
@@ -42,23 +48,22 @@ struct Card<B: View, Labels: View>: View {
         }
         .background(Color.systemWhite)
         .frame(width: width)
-        .border(.red, width: 2)
     }
 }
 
 extension Card where B == EmptyView {
-    init(title: String, subTitle: String? = nil, width: CGFloat = 200, labels: @escaping () -> Labels) {
+    init(title: String, subTitle: String? = nil, width: CGFloat = 200, additionalInfo: @escaping () -> L) {
         self.init(
             title: title,
             subTitle: subTitle,
             width: width,
             button: { EmptyView() },
-            additionalInfo: labels
+            additionalInfo: additionalInfo
         )
     }
 }
 
-extension Card where Labels == EmptyView {
+extension Card where L == EmptyView {
     init(title: String, subTitle: String? = nil, width: CGFloat = 200, button: @escaping () -> B) {
         self.init(
             title: title,
@@ -70,7 +75,7 @@ extension Card where Labels == EmptyView {
     }
 }
 
-extension Card where B == EmptyView, Labels == EmptyView {
+extension Card where B == EmptyView, L == EmptyView {
     init(title: String, subTitle: String? = nil, width: CGFloat = 200) {
         self.init(
             title: title,
@@ -115,6 +120,11 @@ struct Card_Previews: PreviewProvider {
             })
             Card(title: "Why", button: {
                 myButton
+            })
+            Card(title: "eee", additionalInfo: {
+                CFButton(label: "ww", size: .small, type: .text, width: 80) {
+                    print("hh")
+                }
             })
             Card(
                 title: "World",

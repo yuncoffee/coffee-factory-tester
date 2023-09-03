@@ -40,21 +40,20 @@ struct ContentView: View {
                 } )
 //            Card(title: "My Card",
 //                 width: 240)
-            Button {
-                print("1111")
-            } label: {
-                Text("1111")
-            }
-            Button {
-                print("2222")
-            } label: {
-                Text("11222211")
-            }
             MyMy {
                 print("날라와라")
             }
             MyMy {
                 print("이리와라")
+            }
+            MyMy {
+                print("잘되자나..")
+            }
+            TestCard {
+                print("Why..?")
+            }
+            TestCard {
+                print("Why..?")
             }
         }
         .systemFont(.caption)

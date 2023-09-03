@@ -19,13 +19,14 @@ struct ContentView: View {
                 .border(.red, width: 2)
             Text("Anatomy Of, \nAnatomy Of")
                 .systemFont(.largeTtile)
-                .padding(.spacing(.medium))
+//                .padding(.spacing(.medium))
                 .border(.red, width: 2)
-                .background(Color.blue)
-                .cornerRadius(.cornerRadius(.xlarge))
+                .background(Color.myColor)
+                .cornerRadius(.CFCornerRadius.round)
                 .clipped()
                 
             Text("Anatomy Of, \nAnatomy Of")
+                .foregroundColor(.myColor)
                 .systemFont(.largeTtile)
         }
         .padding()
@@ -34,6 +35,10 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+                .environment(\.colorScheme, .dark)
+        }
     }
 }

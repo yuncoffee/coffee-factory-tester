@@ -19,7 +19,6 @@ struct CFSystemFontModifier: ViewModifier {
     var weight: FoundationTypoSystemFont.FontWeight?
     
     func body(content: Content) -> some View {
-        
         content
             .font(Font.custom(
                 weight?.fontName ?? style.fontWeight.fontName,
@@ -29,7 +28,6 @@ struct CFSystemFontModifier: ViewModifier {
             .lineSpacing(style.lineHeight)
     }
 }
-
 
 enum FoundationTypoSystemFont {
     case largeTtile
@@ -46,7 +44,7 @@ enum FoundationTypoSystemFont {
 //        case thin
 //        case light
         case regular
-//        case medium
+        case medium
 //        case semibold
         case bold
 //        case heavy
@@ -151,8 +149,8 @@ extension FoundationTypoSystemFont.FontWeight {
 //            return "Pretendard-Light"
         case .regular:
             return "Pretendard-Regular"
-//        case .medium:
-//            return "Pretendard-Medium"
+        case .medium:
+            return "Pretendard-Medium"
 //        case .semibold:
 //            return "Pretendard-SemiBold"
         case .bold:

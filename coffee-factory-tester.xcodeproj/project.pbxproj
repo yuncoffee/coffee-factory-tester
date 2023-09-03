@@ -18,6 +18,11 @@
 		A9BBDB582AA3268D00FCD396 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9BBDB572AA3268D00FCD396 /* Pretendard-Regular.otf */; };
 		A9BBDB5A2AA3341600FCD396 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB592AA3341600FCD396 /* Colors.swift */; };
 		A9BBDB5D2AA4118B00FCD396 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BBDB5C2AA4118B00FCD396 /* Colors.xcassets */; };
+		A9BBDB642AA4528600FCD396 /* CFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB632AA4528600FCD396 /* CFButton.swift */; };
+		A9BBDB672AA46F8700FCD396 /* CommonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB662AA46F8700FCD396 /* CommonStyle.swift */; };
+		A9BBDB6A2AA492BE00FCD396 /* CFLabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB692AA492BE00FCD396 /* CFLabelLabel.swift */; };
+		A9BBDB6E2AA4AB8500FCD396 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9BBDB6D2AA4AB8500FCD396 /* Pretendard-Medium.otf */; };
+		A9BBDB722AA4B4B800FCD396 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB712AA4B4B800FCD396 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,11 @@
 		A9BBDB572AA3268D00FCD396 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		A9BBDB592AA3341600FCD396 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A9BBDB5C2AA4118B00FCD396 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A9BBDB632AA4528600FCD396 /* CFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFButton.swift; sourceTree = "<group>"; };
+		A9BBDB662AA46F8700FCD396 /* CommonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStyle.swift; sourceTree = "<group>"; };
+		A9BBDB692AA492BE00FCD396 /* CFLabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFLabelLabel.swift; sourceTree = "<group>"; };
+		A9BBDB6D2AA4AB8500FCD396 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		A9BBDB712AA4B4B800FCD396 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,9 @@
 		A9BBDB462AA2F13300FCD396 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				A9BBDB652AA46F6B00FCD396 /* Common */,
+				A9BBDB5E2AA4441900FCD396 /* Core */,
+				A9BBDB6F2AA4B47200FCD396 /* Basic */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -140,9 +153,59 @@
 			isa = PBXGroup;
 			children = (
 				A9BBDB552AA3268600FCD396 /* Pretendard-Bold.otf */,
+				A9BBDB6D2AA4AB8500FCD396 /* Pretendard-Medium.otf */,
 				A9BBDB572AA3268D00FCD396 /* Pretendard-Regular.otf */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		A9BBDB5E2AA4441900FCD396 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBDB682AA492A900FCD396 /* Label */,
+				A9BBDB622AA4523500FCD396 /* Button */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A9BBDB622AA4523500FCD396 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBDB632AA4528600FCD396 /* CFButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		A9BBDB652AA46F6B00FCD396 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBDB662AA46F8700FCD396 /* CommonStyle.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A9BBDB682AA492A900FCD396 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBDB692AA492BE00FCD396 /* CFLabelLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		A9BBDB6F2AA4B47200FCD396 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBDB702AA4B4AE00FCD396 /* Card */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		A9BBDB702AA4B4AE00FCD396 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				A9BBDB712AA4B4B800FCD396 /* Card.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +277,7 @@
 				A9BBDB582AA3268D00FCD396 /* Pretendard-Regular.otf in Resources */,
 				A9BBDB562AA3268600FCD396 /* Pretendard-Bold.otf in Resources */,
 				A9BBDB362AA0BC0F00FCD396 /* Assets.xcassets in Resources */,
+				A9BBDB6E2AA4AB8500FCD396 /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +289,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9BBDB342AA0BC0D00FCD396 /* ContentView.swift in Sources */,
+				A9BBDB722AA4B4B800FCD396 /* Card.swift in Sources */,
+				A9BBDB642AA4528600FCD396 /* CFButton.swift in Sources */,
+				A9BBDB672AA46F8700FCD396 /* CommonStyle.swift in Sources */,
 				A9BBDB322AA0BC0D00FCD396 /* coffee_factory_testerApp.swift in Sources */,
 				A9BBDB5A2AA3341600FCD396 /* Colors.swift in Sources */,
 				A9BBDB482AA2F16900FCD396 /* Space.swift in Sources */,
+				A9BBDB6A2AA492BE00FCD396 /* CFLabelLabel.swift in Sources */,
 				A9BBDB4D2AA3105300FCD396 /* SystemFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

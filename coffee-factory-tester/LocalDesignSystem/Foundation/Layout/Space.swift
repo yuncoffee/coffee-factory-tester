@@ -41,6 +41,12 @@ enum FoundationSpaceFrame: CGFloat {
     case xxlarge = 54.0
 }
 
+enum ComponentSpaceSpacing: CGFloat {
+    case small = 2.0
+    case medium = 4.0
+    case large = 8.0
+}
+
 extension CGFloat {
 /**
  View의 CornerRadius 값을 설정할 때 사용됩니다.
@@ -124,5 +130,18 @@ extension CGFloat {
         static let xlarge = FoundationSpaceFrame.xlarge.rawValue
         /// rawValue: 54.0
         static let xxlarge = FoundationSpaceFrame.xxlarge.rawValue
+    }
+}
+
+extension CGFloat {
+    // MARK: - CFComponentSpacing
+    struct CFCompoentSpacing {
+        private init(){}
+        /// rawValue: 2.0
+        static let small = ComponentSpaceSpacing.small.rawValue
+        /// rawValue: 4.0
+        static let medium = ComponentSpaceSpacing.medium.rawValue
+        /// rawValue: 8.0
+        static let large = ComponentSpaceSpacing.large.rawValue
     }
 }

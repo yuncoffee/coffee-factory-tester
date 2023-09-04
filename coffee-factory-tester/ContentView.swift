@@ -18,6 +18,7 @@ struct ContentView: View {
             print("hello")
         })
     var myImage: Image = Image("sample")
+    var myImage2: Image = Image("sample2")
     
     var body: some View {
         VStack {
@@ -35,7 +36,7 @@ struct ContentView: View {
                 myImage
             }
             Card(title: "MyCardType2", width: 320, tintColor: .systemWhite) {
-                myImage
+                myImage2
             } button: {
                 myCFButton
             } additionalInfo: {

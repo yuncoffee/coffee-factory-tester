@@ -20,10 +20,9 @@
 		A9BBDB5D2AA4118B00FCD396 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9BBDB5C2AA4118B00FCD396 /* Colors.xcassets */; };
 		A9BBDB642AA4528600FCD396 /* CFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB632AA4528600FCD396 /* CFButton.swift */; };
 		A9BBDB672AA46F8700FCD396 /* CommonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB662AA46F8700FCD396 /* CommonStyle.swift */; };
-		A9BBDB6A2AA492BE00FCD396 /* CFLabelLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB692AA492BE00FCD396 /* CFLabelLabel.swift */; };
+		A9BBDB6A2AA492BE00FCD396 /* CFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB692AA492BE00FCD396 /* CFLabel.swift */; };
 		A9BBDB6E2AA4AB8500FCD396 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9BBDB6D2AA4AB8500FCD396 /* Pretendard-Medium.otf */; };
 		A9BBDB722AA4B4B800FCD396 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB712AA4B4B800FCD396 /* Card.swift */; };
-		A9BBDB742AA4E93600FCD396 /* TestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BBDB732AA4E93600FCD396 /* TestCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,10 +40,9 @@
 		A9BBDB5C2AA4118B00FCD396 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A9BBDB632AA4528600FCD396 /* CFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFButton.swift; sourceTree = "<group>"; };
 		A9BBDB662AA46F8700FCD396 /* CommonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStyle.swift; sourceTree = "<group>"; };
-		A9BBDB692AA492BE00FCD396 /* CFLabelLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFLabelLabel.swift; sourceTree = "<group>"; };
+		A9BBDB692AA492BE00FCD396 /* CFLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFLabel.swift; sourceTree = "<group>"; };
 		A9BBDB6D2AA4AB8500FCD396 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		A9BBDB712AA4B4B800FCD396 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		A9BBDB732AA4E93600FCD396 /* TestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +187,7 @@
 		A9BBDB682AA492A900FCD396 /* Label */ = {
 			isa = PBXGroup;
 			children = (
-				A9BBDB692AA492BE00FCD396 /* CFLabelLabel.swift */,
+				A9BBDB692AA492BE00FCD396 /* CFLabel.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -206,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				A9BBDB712AA4B4B800FCD396 /* Card.swift */,
-				A9BBDB732AA4E93600FCD396 /* TestCard.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -298,8 +295,7 @@
 				A9BBDB322AA0BC0D00FCD396 /* coffee_factory_testerApp.swift in Sources */,
 				A9BBDB5A2AA3341600FCD396 /* Colors.swift in Sources */,
 				A9BBDB482AA2F16900FCD396 /* Space.swift in Sources */,
-				A9BBDB742AA4E93600FCD396 /* TestCard.swift in Sources */,
-				A9BBDB6A2AA492BE00FCD396 /* CFLabelLabel.swift in Sources */,
+				A9BBDB6A2AA492BE00FCD396 /* CFLabel.swift in Sources */,
 				A9BBDB4D2AA3105300FCD396 /* SystemFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

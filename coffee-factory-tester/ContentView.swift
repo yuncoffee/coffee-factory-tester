@@ -9,54 +9,41 @@ import SwiftUI
 import CoffeeFactorySwift
 
 struct ContentView: View {
+    
+    var myCFButton: CFButton = CFButton(
+        label: "Hello World",
+        size: .xlarge,
+        type: .roundFill,
+        action: {
+            print("hello")
+        })
+    var myImage: Image = Image("sample")
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-//                .padding(CoffeeFactorySwift.init().myFloat)
-                .border(.red, width: 2)
-            Text("Anatomy Of, \nAnatomy Of")
-                .systemFont(.largeTtile)
-//                .padding(.spacing(.medium))
-                .border(.red, width: 2)
-                .background(Color.systemGray100)
-                .cornerRadius(.CFCornerRadius.round)
-                .clipped()
-                
-            Text("Anatomy Of, \nAnatomyasdasda Of")
-//            .lineLimit(1)
-                .multilineTextAlignment(.trailing)
-            .frame(width: 200)
-            .border(.red)
-            .background(Color.CFPrimary.lightness)
+            Text("ddd")
+                .foregroundColor(.CFSecondary.orange)
             CFButton(
-                label: "Hello", size: .xlarge, type: .boxLine, action: {
+                label: "Hello World", size: .xlarge, type: .boxLine, action: {
                     print("hello")
-                } )
+                })
             CFButton(
-                label: "world", size: .xlarge, type: .boxLine, action: {
+                label: "World Hello", type: .roundFill, action: {
                     print("world")
                 } )
-//            Card(title: "My Card",
-//                 width: 240)
-            MyMy {
-                print("날라와라")
+            Card(title: "MyCard", width: 360) {
+                myImage
             }
-            MyMy {
-                print("이리와라")
+            Card(title: "MyCardType2", width: 320, tintColor: .systemWhite) {
+                myImage
+            } button: {
+                myCFButton
+            } additionalInfo: {
+                CFLabel(label: "World", size: .xlarge, color: .CFSecondary.deepblue)
             }
-            MyMy {
-                print("잘되자나..")
-            }
-            TestCard {
-                print("Why..?")
-            }
-            TestCard {
-                print("Why..?")
-            }
+            .background(Color.CFSecondary.pink)
+            .cornerRadius(.CFCornerRadius.xxlarge)
         }
-        .systemFont(.caption)
         .padding()
     }
 }
